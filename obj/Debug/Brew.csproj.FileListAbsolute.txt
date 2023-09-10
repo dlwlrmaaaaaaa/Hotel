@@ -1,0 +1,10 @@
+C:\Project\Brew\bin\Debug\Brew.exe.config
+C:\Project\Brew\bin\Debug\Brew.exe
+C:\Project\Brew\bin\Debug\Brew.pdb
+C:\Project\Brew\obj\Debug\Brew.csproj.AssemblyReference.cache
+C:\Project\Brew\obj\Debug\Brew.Form1.resources
+C:\Project\Brew\obj\Debug\Brew.Properties.Resources.resources
+C:\Project\Brew\obj\Debug\Brew.csproj.GenerateResource.cache
+C:\Project\Brew\obj\Debug\Brew.csproj.CoreCompileInputs.cache
+C:\Project\Brew\obj\Debug\Brew.exe
+C:\Project\Brew\obj\Debug\Brew.pdb
