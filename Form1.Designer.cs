@@ -37,7 +37,6 @@
             this.lblAge = new System.Windows.Forms.Label();
             this.lblContact = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
-            this.lblTitle = new System.Windows.Forms.Label();
             this.gBAccomodation = new System.Windows.Forms.GroupBox();
             this.cmdExecutive = new System.Windows.Forms.RadioButton();
             this.cmdDeluxe = new System.Windows.Forms.RadioButton();
@@ -59,6 +58,7 @@
             this.lblDiscount = new System.Windows.Forms.Label();
             this.lblTotalAmount = new System.Windows.Forms.Label();
             this.tBTotalAmount = new System.Windows.Forms.TextBox();
+            this.lblTitle = new System.Windows.Forms.Label();
             this.gBPI.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.upPax)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.updAge)).BeginInit();
@@ -69,7 +69,7 @@
             // 
             // gBPI
             // 
-            this.gBPI.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(102)))), ((int)(((byte)(141)))));
+            this.gBPI.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(221)))));
             this.gBPI.Controls.Add(this.upPax);
             this.gBPI.Controls.Add(this.updAge);
             this.gBPI.Controls.Add(this.tBContact);
@@ -79,7 +79,7 @@
             this.gBPI.Controls.Add(this.lblContact);
             this.gBPI.Controls.Add(this.lblName);
             this.gBPI.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gBPI.ForeColor = System.Drawing.Color.White;
+            this.gBPI.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(106)))), ((int)(((byte)(112)))));
             this.gBPI.Location = new System.Drawing.Point(31, 70);
             this.gBPI.Name = "gBPI";
             this.gBPI.Size = new System.Drawing.Size(423, 167);
@@ -90,7 +90,9 @@
             // 
             // upPax
             // 
+            this.upPax.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(106)))), ((int)(((byte)(112)))));
             this.upPax.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.upPax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(221)))));
             this.upPax.Location = new System.Drawing.Point(144, 132);
             this.upPax.Maximum = new decimal(new int[] {
             8,
@@ -113,7 +115,9 @@
             // 
             // updAge
             // 
+            this.updAge.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(106)))), ((int)(((byte)(112)))));
             this.updAge.Font = new System.Drawing.Font("Tahoma", 11F, System.Drawing.FontStyle.Bold);
+            this.updAge.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(221)))));
             this.updAge.Location = new System.Drawing.Point(144, 97);
             this.updAge.Minimum = new decimal(new int[] {
             18,
@@ -131,19 +135,20 @@
             // 
             // tBContact
             // 
-            this.tBContact.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.tBContact.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(106)))), ((int)(((byte)(112)))));
             this.tBContact.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.tBContact.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(221)))));
             this.tBContact.Location = new System.Drawing.Point(144, 64);
             this.tBContact.Name = "tBContact";
             this.tBContact.Size = new System.Drawing.Size(228, 27);
             this.tBContact.TabIndex = 5;
-            this.tBContact.TextChanged += new System.EventHandler(this.tBContact_TextChanged);
             this.tBContact.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.contactKeypressed);
             // 
             // tBName
             // 
-            this.tBName.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.tBName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(106)))), ((int)(((byte)(112)))));
             this.tBName.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.tBName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(221)))));
             this.tBName.Location = new System.Drawing.Point(144, 33);
             this.tBName.Name = "tBName";
             this.tBName.Size = new System.Drawing.Size(228, 27);
@@ -191,27 +196,15 @@
             this.lblName.TabIndex = 0;
             this.lblName.Text = "Name";
             // 
-            // lblTitle
-            // 
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(102)))), ((int)(((byte)(141)))));
-            this.lblTitle.Font = new System.Drawing.Font("Tahoma", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(354, 9);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(119, 45);
-            this.lblTitle.TabIndex = 1;
-            this.lblTitle.Text = "Hotel";
-            // 
             // gBAccomodation
             // 
-            this.gBAccomodation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(102)))), ((int)(((byte)(141)))));
+            this.gBAccomodation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(221)))));
             this.gBAccomodation.Controls.Add(this.cmdExecutive);
             this.gBAccomodation.Controls.Add(this.cmdDeluxe);
             this.gBAccomodation.Controls.Add(this.cmdEconomy);
             this.gBAccomodation.Controls.Add(this.cmdStandard);
             this.gBAccomodation.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold);
-            this.gBAccomodation.ForeColor = System.Drawing.Color.White;
+            this.gBAccomodation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(106)))), ((int)(((byte)(112)))));
             this.gBAccomodation.Location = new System.Drawing.Point(31, 262);
             this.gBAccomodation.Name = "gBAccomodation";
             this.gBAccomodation.Size = new System.Drawing.Size(212, 213);
@@ -274,14 +267,14 @@
             // 
             // gBDiscount
             // 
-            this.gBDiscount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(102)))), ((int)(((byte)(141)))));
+            this.gBDiscount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(221)))));
             this.gBDiscount.Controls.Add(this.cmdVIP);
             this.gBDiscount.Controls.Add(this.cmdPWD);
             this.gBDiscount.Controls.Add(this.cmdRegular);
             this.gBDiscount.Controls.Add(this.cmdSenior);
             this.gBDiscount.Controls.Add(this.cmdNew);
             this.gBDiscount.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gBDiscount.ForeColor = System.Drawing.Color.White;
+            this.gBDiscount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(106)))), ((int)(((byte)(112)))));
             this.gBDiscount.Location = new System.Drawing.Point(249, 262);
             this.gBDiscount.Name = "gBDiscount";
             this.gBDiscount.Size = new System.Drawing.Size(205, 213);
@@ -356,7 +349,7 @@
             // 
             // gBBilling
             // 
-            this.gBBilling.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(102)))), ((int)(((byte)(141)))));
+            this.gBBilling.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(221)))));
             this.gBBilling.Controls.Add(this.btnCalc);
             this.gBBilling.Controls.Add(this.lblPayment);
             this.gBBilling.Controls.Add(this.tBPayment);
@@ -377,18 +370,20 @@
             // 
             // btnCalc
             // 
-            this.btnCalc.ForeColor = System.Drawing.Color.Blue;
+            this.btnCalc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(106)))), ((int)(((byte)(112)))));
+            this.btnCalc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(221)))));
             this.btnCalc.Location = new System.Drawing.Point(62, 361);
             this.btnCalc.Name = "btnCalc";
             this.btnCalc.Size = new System.Drawing.Size(186, 36);
             this.btnCalc.TabIndex = 13;
             this.btnCalc.Text = "Calculate";
-            this.btnCalc.UseVisualStyleBackColor = true;
+            this.btnCalc.UseVisualStyleBackColor = false;
             this.btnCalc.Click += new System.EventHandler(this.btnCalc_Click);
             // 
             // lblPayment
             // 
             this.lblPayment.AutoSize = true;
+            this.lblPayment.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(106)))), ((int)(((byte)(112)))));
             this.lblPayment.Location = new System.Drawing.Point(84, 295);
             this.lblPayment.Name = "lblPayment";
             this.lblPayment.Size = new System.Drawing.Size(150, 23);
@@ -397,16 +392,19 @@
             // 
             // tBPayment
             // 
-            this.tBPayment.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.tBPayment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(106)))), ((int)(((byte)(112)))));
             this.tBPayment.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.tBPayment.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(221)))));
             this.tBPayment.Location = new System.Drawing.Point(41, 328);
             this.tBPayment.Name = "tBPayment";
             this.tBPayment.Size = new System.Drawing.Size(228, 27);
             this.tBPayment.TabIndex = 11;
+            this.tBPayment.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Payment_Pressed);
             // 
             // lblAmountDue
             // 
             this.lblAmountDue.AutoSize = true;
+            this.lblAmountDue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(106)))), ((int)(((byte)(112)))));
             this.lblAmountDue.Location = new System.Drawing.Point(94, 207);
             this.lblAmountDue.Name = "lblAmountDue";
             this.lblAmountDue.Size = new System.Drawing.Size(128, 23);
@@ -415,8 +413,10 @@
             // 
             // tBAmountDue
             // 
-            this.tBAmountDue.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.tBAmountDue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(106)))), ((int)(((byte)(112)))));
+            this.tBAmountDue.Enabled = false;
             this.tBAmountDue.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.tBAmountDue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(221)))));
             this.tBAmountDue.Location = new System.Drawing.Point(41, 245);
             this.tBAmountDue.Name = "tBAmountDue";
             this.tBAmountDue.Size = new System.Drawing.Size(228, 27);
@@ -424,8 +424,10 @@
             // 
             // tBDiscount
             // 
-            this.tBDiscount.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.tBDiscount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(106)))), ((int)(((byte)(112)))));
+            this.tBDiscount.Enabled = false;
             this.tBDiscount.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.tBDiscount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(221)))));
             this.tBDiscount.Location = new System.Drawing.Point(41, 161);
             this.tBDiscount.Name = "tBDiscount";
             this.tBDiscount.Size = new System.Drawing.Size(228, 27);
@@ -434,6 +436,7 @@
             // lblDiscount
             // 
             this.lblDiscount.AutoSize = true;
+            this.lblDiscount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(106)))), ((int)(((byte)(112)))));
             this.lblDiscount.Location = new System.Drawing.Point(104, 130);
             this.lblDiscount.Name = "lblDiscount";
             this.lblDiscount.Size = new System.Drawing.Size(94, 23);
@@ -443,6 +446,7 @@
             // lblTotalAmount
             // 
             this.lblTotalAmount.AutoSize = true;
+            this.lblTotalAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(106)))), ((int)(((byte)(112)))));
             this.lblTotalAmount.Location = new System.Drawing.Point(84, 37);
             this.lblTotalAmount.Name = "lblTotalAmount";
             this.lblTotalAmount.Size = new System.Drawing.Size(140, 23);
@@ -451,29 +455,44 @@
             // 
             // tBTotalAmount
             // 
-            this.tBTotalAmount.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.tBTotalAmount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(106)))), ((int)(((byte)(112)))));
+            this.tBTotalAmount.Enabled = false;
             this.tBTotalAmount.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.tBTotalAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(221)))));
             this.tBTotalAmount.Location = new System.Drawing.Point(41, 81);
             this.tBTotalAmount.Name = "tBTotalAmount";
             this.tBTotalAmount.Size = new System.Drawing.Size(228, 27);
             this.tBTotalAmount.TabIndex = 5;
             // 
+            // lblTitle
+            // 
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(221)))));
+            this.lblTitle.Font = new System.Drawing.Font("Tahoma", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(106)))), ((int)(((byte)(112)))));
+            this.lblTitle.Location = new System.Drawing.Point(368, 9);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(119, 45);
+            this.lblTitle.TabIndex = 6;
+            this.lblTitle.Text = "Hotel";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(205)))), ((int)(((byte)(221)))));
-            this.ClientSize = new System.Drawing.Size(800, 487);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(106)))), ((int)(((byte)(112)))));
+            this.ClientSize = new System.Drawing.Size(810, 505);
+            this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.gBBilling);
             this.Controls.Add(this.gBDiscount);
             this.Controls.Add(this.gBAccomodation);
-            this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.gBPI);
             this.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Name = "Form1";
             this.Text = "Hotel";
             this.TransparencyKey = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.BackgroundImageChanged += new System.EventHandler(this.Form1_BackgroundImageChanged);
             this.gBPI.ResumeLayout(false);
             this.gBPI.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.upPax)).EndInit();
@@ -492,7 +511,6 @@
         #endregion
 
         private System.Windows.Forms.GroupBox gBPI;
-        private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Label lblPax;
         private System.Windows.Forms.Label lblAge;
         private System.Windows.Forms.Label lblContact;
@@ -522,6 +540,7 @@
         private System.Windows.Forms.Button btnCalc;
         private System.Windows.Forms.Label lblPayment;
         private System.Windows.Forms.TextBox tBPayment;
+        private System.Windows.Forms.Label lblTitle;
     }
 }
 
